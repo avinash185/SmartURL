@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard - SmartURL</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header class="header">
+  <div class="container">
+    <h1>SmartURL</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <button id="logoutBtn" class="btn">Logout</button>
+    </nav>
+  </div>
+</header>
+  <main class="container">
+    <section class="grid">
+      <div class="card stat"><h3>Total Users</h3><p id="totalUsers">0</p></div>
+      <div class="card stat"><h3>Total URLs</h3><p id="totalUrls">0</p></div>
+      <div class="card stat"><h3>Total Clicks</h3><p id="totalClicks">0</p></div>
+    </section>
+
+    <section class="card">
+      <h2>Users</h2>
+      <table class="table" id="usersTable">
+        <thead><tr><th>Username</th><th>Email</th><th>Role</th><th>Joined</th><th>Actions</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>URLs</h2>
+      <table class="table" id="urlsTable">
+        <thead><tr><th>User ID</th><th>Short</th><th>Original</th><th>Clicks</th><th>Created</th><th>Actions</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <div id="msg" class="msg"></div>
+  </main>
+  <script src="js/admin-dashboard.js"></script>
+</body>
+</html>

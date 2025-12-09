@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartURL - Shorten URLs</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>SmartURL</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <span class="auth-links">
+          <a id="loginLink" href="login.html">Login</a>
+          <a id="registerLink" href="register.html">Register</a>
+          <a id="dashboardLink" href="dashboard.html" style="display:none;">Dashboard</a>
+          <a id="adminLink" href="admin-dashboard.html" style="display:none;">Admin</a>
+          <button id="logoutBtn" class="btn" style="display:none;">Logout</button>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container medium center-main">
+    <section class="card">
+      <h2>Shorten your URL</h2>
+      <form id="shortenForm">
+        <input type="url" id="originalUrl" placeholder="Enter URL (e.g., https://example.com)" required />
+        <input type="text" id="customCode" placeholder="Custom alias (optional, 3–10 letters/numbers/-/_)" />
+        <button type="submit" class="btn primary">Shorten</button>
+      </form>
+      <div id="result" class="result" style="display:none;">
+        <p>Short URL:</p>
+        <a id="shortLink" target="_blank" rel="noopener"></a>
+        <button id="copyBtn" class="btn">Copy</button>
+      </div>
+      <div id="msg" class="msg"></div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

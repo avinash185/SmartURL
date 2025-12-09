@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - SmartURL</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header class="header">
+  <div class="container">
+    <h1>SmartURL</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <button id="logoutBtn" class="btn">Logout</button>
+    </nav>
+  </div>
+</header>
+  <main class="container">
+    <section class="card">
+      <h2>Your URLs</h2>
+      <div id="msg" class="msg"></div>
+      <div class="toolbar">
+        <span style="margin-right:8px;color:var(--muted)">Show:</span>
+        <button id="filterAll" class="btn">All</button>
+        <button id="filterFav" class="btn">Favorites</button>
+      </div>
+      <table class="table" id="urlsTable">
+        <thead>
+          <tr>
+            <th>Short</th>
+            <th>Original</th>
+            <th>Clicks</th>
+            <th>Created</th>
+            <th>Favorite</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
